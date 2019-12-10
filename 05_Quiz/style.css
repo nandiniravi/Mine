@@ -1,0 +1,218 @@
+.container{
+    width: 98%;
+    border: 1px solid  #BB8FCE;
+    border-radius: 10px;
+    background-image: linear-gradient(to right,white , #31E1D6);
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    margin:0% 1% 0% 0.4%;
+    
+}
+
+.header{
+    /*height:9%;*/
+    background-color: #BB8FCE;
+    text-align: center;
+    margin-left: auto;
+    color: white;
+    font-size: 25px;
+    border-radius: 20px;
+}
+#question{
+    margin-top: 1%;
+    font-size: 40px;
+    margin-left: 0%;
+}
+
+.rectangle{
+    display: inline-block;
+    width: 22%;
+    /*height: 72vh;*/
+    margin: 1% 1% 2% 1%;    
+    border: 1px solid #BB8FCE;
+    border-radius: 20px;
+    padding: 0% 0% 1.5% 0%;
+    vertical-align: top;
+}
+
+.mybutton{
+    display: inline-block;
+    width: 14%;
+    height: 7%;
+    border-radius: 20px;
+    border: 2px solid #BB8FCE;
+    margin-top: 0.5%;
+    margin-bottom: 1.5%;
+    background-color: #BB8FCE;
+    color: white;
+    text-align: center;
+    padding-top: 2px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.mybutton:hover{
+    background-color: #B9F98F;
+    border-color:  #B9F98F;
+}
+#next{
+    margin-left: 1%;
+}
+
+#previous{
+    margin-left: 68%;
+}
+
+#shapes h1{
+    margin: none;
+}
+
+form{
+    margin: 10%;
+    color: white;
+    font-size:19px;
+}
+
+form input{
+    width: 100%;
+    margin: 4%;
+    border: 2px solid #BB8FCE;
+    border-radius: 20px;
+    font-size: 32px;
+    color: #BB8FCE;
+    margin-bottom: 6%;
+}
+
+#check{
+    width: 50%;
+    margin: 0% 0% 5% 25%;
+}
+
+.rectangle h1{
+    font-size: 50px;
+    margin: 0%;
+    color: #BB8FCE;
+    text-align: center;
+}
+
+.rectangle img{
+    width:45%;
+    margin-left:25%;
+    margin-bottom:0.5%;
+}
+
+#colorbox{
+    width: 70%;
+    border: 2px solid white;
+    padding: 70% 2% 68% 2%;
+    margin-left: 12%;
+    margin-top: 5%;
+}
+
+#answer{
+    padding-bottom: 5.5%;
+}
+
+#startContainer{
+    display: inline-block;
+    padding: 15% 1% 15% 1%;
+    width: 98%;
+    color:#BB8FCE;
+    font-size: 40px;
+}
+
+#name,#congrats{
+    display: inline-block;
+    width: 40%;
+    border: 2px solid purple;
+    padding: 5% 10% 2% 10%;
+    border-radius: 20px;
+    margin-left: 20%;
+}
+
+#start{
+    width: 50%;
+    margin-left: 68%;
+}
+
+a{
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    text-decoration: none;
+
+}
+
+#colors,#numbers{
+    padding-bottom: 1.75%;
+}
+
+#submit{
+    margin-left: 1%;
+    display:none;
+}
+
+#shapes{
+    margin-left:1%;
+}
+
+#endContainer{
+    display: inline-block;
+    padding: 15% 0.5% 15% 0.5%;
+    width: 98%;
+    color:#BB8FCE;
+    font-size: 40px;
+    border: 1px solid #BB8FCE;
+}
+
+@media only screen and (max-width: 768px){
+    .rectangle{
+        width: 98%;
+        height: none;
+    }
+
+    #name,#congrats{
+        font-size: 20px;
+    }
+
+    a{
+        font-size: 20px;
+    }
+
+    .mybutton,#submit{
+        font-size: 18px;
+    }
+    #next{
+        margin-left: 1%;
+    }
+    #previous{
+        margin-left: 65%;
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 375px){
+    .rectangle{
+        width: 99%;
+    }
+
+    .mybutton,#submit{
+        font-size: 18px;
+    }
+    #next{
+        margin-left: 1%;
+    }
+    #previous{
+        margin-left: 65%;
+        font-size: 12px;
+    }
+
+    #name{
+        font-size: 20px;
+    }
+
+    a{
+        font-size: 20px;
+    }
+
+   
+}

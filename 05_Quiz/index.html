@@ -1,0 +1,45 @@
+<!doctype HTML>
+<html>
+    <head>
+        <title>Quiz</title>
+        <link href='style.css' type='text/css' rel='stylesheet'/>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    </head>
+    <body>
+         <div id='startContainer' class='container'>
+            <div id='name'>Hey, little champ, Enter your name here:
+                <form>
+                    <input type='text' id='user' style='margin-top:0%'>
+                </form>
+                <div id='start' class='mybutton'>Start Quiz!</div>
+            </div>
+        </div>
+        <div id='questionContainer' class='container'>
+            <div id='question'class='header'></div>
+            <div id='shapes' class='rectangle'>
+                <div id='box1' class='header'>Box 1</div>            
+            </div>
+            <div id='colors' class='rectangle'>
+                <div id='box2' class='header'>Box 2</div>
+                <div id='colorbox'></div>                
+            </div>
+            <div id='numbers' class='rectangle'>
+                <div id='box3' class='header'>Box 3</div>
+            </div>
+            <div id='answer' class='rectangle'>
+                <div id='box4' class='header'>Your Answers</div>
+                <form>
+                    Shape given in Box1:<br><input type='text' id='shapeAns' maxlength='15'>
+                    Color given in Box2:<br><input type='text' id='colorAns' maxlength='15'>
+                    Name of character in Box3:<br><input type='text' id='cartoonName' maxlength='15'>
+                </form>
+            </div>
+            <div id='previous' class='mybutton'>Previous</div>
+            <div id='next' class='mybutton'>Next</div>
+            <div id='submit' class='mybutton'>Submit</div>
+        </div>
+        <div id='endContainer' class='container'>
+            <div id='congrats'>Hey, little champ, Enter your name here:<br><br><br><br></div>
+        <script src='script.js'></script>
+    </body>
+</html>
