@@ -1,0 +1,29 @@
+body{
+    font-family: Comic Sans, Comic Sans MS, cursive;
+}
+
+#bg-frame{
+    border: 1px solid #33D1FF;
+    background-image: url('bg-img.png')
+}
+
+#background{
+    /*border: 1px solid black;*/
+    margin: 4% 6% 4% 4%;
+    background-color: #ffffff;
+    border-radius: 6%;
+    z-index: -3;
+}
+
+#car-1,#car-2, #car-3, #car-4{
+    background-color: #33D1FF;
+    text-align: center;
+    color: white;
+    
+}
+
+#car-1 h1{
+    margin: 0% 7%;
+    font-size: 115.5px;
+}
+
