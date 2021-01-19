@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Math is Fun!</title>
+        <script src="https://unpkg.com/vue@next" defer></script>
+        <script src="app.js" defer></script>
+        <link href="styles.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <div id='question'>
+            <form>
+                <h1>How many monkeys are there?</h1>
+                <input type='number' v-bind:value='num1' class='num-box'/>
+                <input type='text' value='+' class='symbol'/>
+                <input type='number' v-bind:value='num2' class='num-box'/>
+                <input type='text' value='=' class='symbol'/>
+                <input type='number' v-model='ans' class='num-box'/><br/>
+                <button v-on:click='checkAnswer'>Submit</button>
+                <button v-if="showNext">Next Question</button>
+            </form></br>
+            <div style="border: 1px solid midnightblue; padding: 0.5% 0%; margin: 0.5% 0%;">
+                <div v-for="num in num1" class='box'>
+                    <span>🐒</span>
+                </div>
+            </div>
+            <div style="border: 1px solid midnightblue; padding: 0.5% 0%; margin: 0.5% 0%;">
+                <div v-for="num in num2" class='box'>
+                    <span>🐒</span>
+                </div>
+            </div>
+            <div v-if="result === 'correct'" class='correct'>
+                <h3>Great job! You are right!</h3>
+                <button v-on:click="reset">Okay</button>
+            </div>
+            <div v-if="result === 'incorrect'" class='incorrect'>
+                <h3>That's not right, try again!</h3>
+                <button v-on:click="reset">Okay</button>
+            </div>
+        </div>
+    </body>
+</html>

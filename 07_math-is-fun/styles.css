@@ -1,0 +1,129 @@
+*{
+    box-sizing: border-box;
+}
+    
+body{
+    text-align: center;
+    font-family: cursive;
+    font-weight: light;
+}
+
+h1{
+    color: midnightblue;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.num-box{
+    width: 15%;
+    background-color: aqua;
+    border: 2px solid midnightblue;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 3rem;
+    padding: 2%;
+    outline: none;
+    color: midnightblue;
+}
+
+.symbol{
+    width: 7%;
+    text-align: center;
+    font-size: 3rem;
+    padding: 2%;
+    color: midnightblue;
+    border: 0px;
+    outline: none;
+}
+
+button{
+    width: 120px;
+    padding: 8px;
+    background-color: midnightblue;
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid #fff;
+    border-radius: 15px;
+    margin: 16px 0px;
+    outline: none;
+}
+
+button:active{
+    outline: none;
+}
+
+.box{
+    font-size: 3rem;
+    display: inline-flex;
+}
+
+.correct, .incorrect{
+    display: inline-block;
+    width: 30%;
+    padding: 1%;
+    color: #fff;
+    position: absolute;
+    top: 35%;
+    left: 35%;
+    z-index: 3;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    animation-name: popup;
+    animation-duration: 3s;
+}
+
+.correct{
+    background-color: #8ACA33;
+}
+
+.incorrect{
+    background-color: #FA8072;
+}
+
+@keyframes popup{
+    from{ top: 0; }
+    to{ top: 35%;}
+}
+
+@media screen and (max-width: 992px){
+    button{
+        width: 200px;
+        padding: 12px;
+        background-color: midnightblue;
+        color: #fff;
+        cursor: pointer;
+        border: 1px solid #fff;
+        border-radius: 15px;
+        margin: 40px 0px;
+        outline: none;
+    }
+
+    #question{
+        margin-top: 15%;
+    }
+
+    .correct, .incorrect{
+        display: inline-block;
+        width: 30%;
+        padding: 1%;
+        color: #fff;
+        position: absolute;
+        top: 20%;
+        left: 35%;
+        z-index: 3;
+        border: 2px solid #fff;
+        border-radius: 20px;
+        animation-name: popup;
+        animation-duration: 3s;
+    }
+
+    @keyframes popup{
+        from{ top: 0; }
+        to{ top: 20%;}
+    }
+
+}
